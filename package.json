@@ -1,0 +1,13 @@
+{
+  "name": "Node.JS-Matchmaker",
+  "version": "0.5.0",
+  "description": "Easy Matchmaking system for games",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RowanHarley/Node.JS-Matchmaker"
+  }
+}

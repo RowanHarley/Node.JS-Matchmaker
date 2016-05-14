@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+		<title>Node.JS Matchmaker</title>
+    </head>
+    <body>
+		<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			var socket = io();
+			socket.emit('ip', myip);
+			
+			var userlist = [];
+			
+			socket.on('update', 'score', function(users){
+				userlist = users;
+			});
+		</script>
+    </body>
+</html>
